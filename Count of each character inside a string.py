@@ -1,4 +1,4 @@
-# Using pprint
+# Using for loop
 
 import pprint  #The pprint module's pprint() "pretty print" function can display a dictionary value cleanly
 
@@ -12,23 +12,18 @@ for character in m:
 
 pprint.pprint(dict)
 
-# Using Counter
+# Using Counter for Strings, Lists, Tuples
 
 from collections import Counter
 
-m = 'a big fat hen'
-dict = Counter(m)
-print(dict)
+l = ('a', 'b', 'z')
+m = ['a', 'b', 'c']
+n = "a big fat hen"
 
-# Simple Way
+countl = Counter(l)
+countm = Counter(m)
+countn = Counter(n)
 
-m = 'a big fat hen'
-dict = {}
-
-for character in m:
-    if character in dict:
-        dict[character] += 1
-    else:
-        dict[character] = 1
-
-print(dict)
+print(countl)
+print(countm)
+print(countn)
