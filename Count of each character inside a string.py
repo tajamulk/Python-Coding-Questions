@@ -4,18 +4,31 @@ import pprint  #The pprint module's pprint() "pretty print" function can display
 
 m = 'a big fat hen'
 
-count = {}
+dict = {}
 
 for character in m:
-    count.setdefault(character, 0)
-    count[character] += 1
+    dict.setdefault(character, 0)
+    dict[character] += 1
 
-pprint.pprint(count)
+pprint.pprint(dict)
 
 # Using Counter
 
 from collections import Counter
 
 m = 'a big fat hen'
-count = Counter(m)
-print(count)
+dict = Counter(m)
+print(dict)
+
+# Simple Way
+
+m = 'a big fat hen'
+dict = {}
+
+for character in m:
+    if character in dict:
+        dict[character] += 1
+    else:
+        dict[character] = 1
+
+print(dict)
