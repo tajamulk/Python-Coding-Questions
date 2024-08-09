@@ -11,7 +11,7 @@ for character in m:
 
 pprint.pprint(dict)
 
-# Simple way 
+# For Loop Counter
 m = 'a big fat hen'
 dict = {}
 
@@ -23,18 +23,11 @@ for character in m:
 
 print(dict)
 
-# Using Counter for Strings, Lists, Tuples
+# Using Counter for Strings, Lists, Tuples - Easy
 
 from collections import Counter
 
-l = ('a', 'b', 'z')
-m = ['a', 'b', 'c']
-n = "a big fat hen"
+m = 'a big fat hen'
 
-countl = Counter(l)
 countm = Counter(m)
-countn = Counter(n)
-
-print(countl)
 print(countm)
-print(countn)
