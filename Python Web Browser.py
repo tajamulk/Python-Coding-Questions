@@ -1,5 +1,4 @@
 import webbrowser
-import sys
 
 address = input("Please enter the address: ")
 
